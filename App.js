@@ -1,4 +1,16 @@
-const initialText = 'Test Text Input';
+const initialText = `
+# Welcome to my React Markdown Previewer!
+
+<ins>**Headings** can be created by starting a line with '#' symbols:</ins>
+
+# Heading 1 (#)
+## Heading 2 (##)
+### Heading 3 (###)
+#### Heading 4 (####)
+##### Heading 5 (#####)
+###### Heading 6 (######)
+
+`;
 
 // const test = ```# Welcome to my React Markdown Previewer!
 
@@ -45,10 +57,17 @@ const initialText = 'Test Text Input';
 
 const App = () => {
   const [editorText, setEditorText] = React.useState(initialText);
+  const [previewHTML, setPreviewHTML] = React.useState(initialText);
 
   const handleEditorChange = (event) => {
     setEditorText(event.target.value);
   };
+
+  // Update the preview view whenever the editorText changes
+  React.useEffect(() => {
+    // Parse editor markdown to HTML for Preview
+    setPreviewHTML(marked.parse(editorText));
+  }, [editorText]);
 
   return (
     <>
@@ -57,7 +76,7 @@ const App = () => {
         editorText={editorText}
         handleEditorChange={handleEditorChange}
       />
-      <HTMLPreview previewText={editorText} />
+      <HTMLPreview previewHTML={previewHTML} />
     </>
   );
 };
