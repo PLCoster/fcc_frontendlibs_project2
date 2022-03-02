@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FCC:Front End Libs - Markdown Previewer</title>
+    <title>Markdown Previewer - PLCoster</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hello</h1>
-    <script src="index.js"></script>
+    <!-- Root Component to attach React tree to -->
+    <div id="root"></div>
+
+    <!-- Babel, React, ReactDOM Scripts-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./components/HTMLPreview.js" type="text/babel"></script>
+    <script src="./components/MarkDownEditor.js" type="text/babel"></script>
+    <script src="App.js" type="text/babel"></script>
   </body>
 </html>
