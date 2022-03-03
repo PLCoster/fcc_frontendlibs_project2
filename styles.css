@@ -6,6 +6,7 @@ body {
   max-height: 100vh;
 }
 
+pre,
 code {
   background: #eee;
 }
@@ -18,7 +19,7 @@ code {
 #preview {
   overflow: scroll;
   resize: horizontal;
-  width: 45vw;
+  width: 100%;
   height: 80vh;
   max-height: 80vh;
   border: 0.5px solid black;
