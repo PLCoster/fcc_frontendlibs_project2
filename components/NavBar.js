@@ -9,13 +9,13 @@ const NavBar = ({
   },
 }) => {
   return (
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-sm navbar-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
           Markdown Previewer
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -23,10 +23,10 @@ const NavBar = ({
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-between"
+          className="collapse navbar-collapse justify-content-between"
           id="navbarNav"
         >
           <ul className="navbar-nav">
