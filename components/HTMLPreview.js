@@ -1,8 +1,12 @@
 const HTMLPreview = ({ previewHTML }) => {
   return (
     <>
-      <h1>This is the HTMLPreview</h1>
-      <div id="preview" dangerouslySetInnerHTML={{ __html: previewHTML }}></div>
+      <h4>HTML Preview:</h4>
+      <div
+        id="preview"
+        className="container p-3"
+        dangerouslySetInnerHTML={{ __html: previewHTML }}
+      ></div>
     </>
   );
 };

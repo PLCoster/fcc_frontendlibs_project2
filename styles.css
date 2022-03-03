@@ -1,7 +1,26 @@
 /*
-=== OVERALL STYLES
+=== OVERALL STYLES ===
 */
+
+body {
+  max-height: 100vh;
+}
 
 code {
   background: #eee;
+}
+
+/*
+=== EDITOR, PREVIEW STYLES ===
+*/
+
+#editor,
+#preview {
+  overflow: scroll;
+  resize: horizontal;
+  width: 45vw;
+  height: 80vh;
+  max-height: 80vh;
+  border: 0.5px solid black;
+  border-radius: 5px;
 }
