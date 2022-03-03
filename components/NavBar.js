@@ -9,25 +9,25 @@ const NavBar = ({
   },
 }) => {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
           Markdown Previewer
         </a>
         <button
-          className="navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse d-flex justify-content-between"
-          id="navbarSupportedContent"
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
         >
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -58,7 +58,7 @@ const NavBar = ({
                 className="btn btn-sm btn-primary m-2"
                 onClick={handleEditorSave}
               >
-                Save Editor
+                Save
               </button>
             </li>
             <li className="nav-item">
@@ -67,7 +67,7 @@ const NavBar = ({
                 className="btn btn-sm btn-warning m-2"
                 onClick={handleEditorLoad}
               >
-                Load Editor
+                Load
               </button>
             </li>
             <li className="nav-item">
@@ -76,7 +76,7 @@ const NavBar = ({
                 className="btn btn-sm btn-danger m-2"
                 onClick={handleEditorClear}
               >
-                Clear Editor
+                Clear
               </button>
             </li>
           </ul>

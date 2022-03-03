@@ -1,6 +1,6 @@
 const MarkDownEditor = ({ editorText, handleEditorChange }) => {
   return (
-    <div id="editor-wrapper" className="m-3">
+    <div id="editor-wrapper" className="col-6 mt-3 mb-3">
       <h4>Markdown Editor:</h4>
       <textarea
         id="editor"
