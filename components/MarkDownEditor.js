@@ -3,7 +3,7 @@ const MarkDownEditor = ({ editorText, handleEditorChange }) => {
   return (
     <>
       <h1>This is the MarkDownEditor</h1>
-      <textarea value={editorText} onChange={handleEditorChange} />
+      <textarea id="editor" value={editorText} onChange={handleEditorChange} />
     </>
   );
 };
