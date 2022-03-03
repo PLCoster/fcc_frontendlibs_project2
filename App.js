@@ -65,8 +65,8 @@ const App = () => {
       gfm: true,
       breaks: true,
     });
-    // Parse editor markdown to HTML for Preview
-    setPreviewHTML(marked.parse(editorText));
+    // Parse editor markdown to HTML for Preview, sanitize with DOMPurify
+    setPreviewHTML(DOMPurify.sanitize(marked.parse(editorText)));
   }, [editorText]);
 
   return (
