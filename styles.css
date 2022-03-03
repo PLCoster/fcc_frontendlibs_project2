@@ -4,24 +4,43 @@
 
 body {
   max-height: 100vh;
+  background-color: #fbfbfb;
 }
 
 pre,
 code {
-  background: #eee;
+  background-color: #eee;
+}
+
+/*
+=== NAVBAR STYLES
+*/
+
+.navbar-brand {
+  margin-left: 40px;
+}
+
+.navbar.navbar-light {
+  background-color: #e4e4e4;
 }
 
 /*
 === EDITOR, PREVIEW STYLES ===
 */
 
+#editor-wrapper,
+#preview-wrapper {
+  width: 45vw;
+}
+
 #editor,
 #preview {
   overflow: scroll;
-  resize: horizontal;
+  resize: none;
   width: 100%;
   height: 80vh;
   max-height: 80vh;
   border: 0.5px solid black;
   border-radius: 5px;
+  background-color: #fff;
 }
