@@ -36,17 +36,23 @@ For the second Free Code Camp: Front End Libraries Projects, I decided to build 
 
 Beyond the required User Stories outlined above, this React Markdown Previewer also allows users to Undo / Redo changes they make in the editor, as well as Save / Load and Clear the contents of the editor as required. The editor history and undo / redo functionality utilise a doubly-linked list in order to store the state of the editor, and allow traversal between previous and future states of the editor.
 
+In additional the markdown editor and preview can be individual hidden from view and recovered in a logical way, allowing the user to either edit their markdown or view the preview at full width, if so desired.
+
 - index.html - this is the sole HTML page for the application, it is primarily used as a mounting point for the React component tree, as well as to import the required JavaScript and CSS libraries for the project.
 
 - styles.css - a small stylesheet to customise styling of the project beyond the default styles in Bootstrap.
 
-- App.js - this is the root component of the React application, it holds at updates the state of the editor and preview via React Hooks, as well as the history of the editor. It renders the other React components, (NavBar.js, MarkDownEditor.js and HTMLPreview.js) and passes to them required functions and props.
+- App.js - this is the root component of the React application, its function is to render both the Navbar and EditorContainer components.
 
 #### Components:
 
-- HTMLPreview.js and MarkDownEditor.js are both presentational components (hold no state). MarkDownEditor is a controlled form component, as its contents are set via props passed down to it from the App component.
+- NavBar.js is a responsive Bootstrap navbar, linking to other projects and pages.
 
-- Navbar.js is another presentational component, which displays the buttons allowing the user to undo/redo and save/reload/clear the editor. These buttons all trigger onClick functions that update state held in the App component.
+- EditorContainer.js is the main component of the application, it holds and updates the state of the editor and preview via React Hooks, as well as the history of the editor. It renders the other React components, (EditorControls.js, MarkDownEditor.js and HTMLPreview.js) and passes to them required functions and props.
+
+- EditorControls.js is a presentational component (does not hold state), which displays the buttons allowing the user to undo/redo and save/reload/clear the editor. These buttons all trigger onClick functions that update state held in the App component.
+
+- HTMLPreview.js and MarkDownEditor.js are also presentational components. MarkDownEditor is a controlled form component, as its content (value) is set via props passed down to it from the App component.
 
 #### Assets:
 
