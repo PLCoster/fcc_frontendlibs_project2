@@ -5,10 +5,9 @@ const HTMLPreview = ({
   handleEditorVisibilityChange,
   handlePreviewVisibilityChange,
 }) => {
-  console.log('HTML Preview Updated, editor is: ', editorVisible);
   return (
     <div id="preview-wrapper" className={panelColumnStyle + ' mt-3 mb-3'}>
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between align-items-center">
         <h4>HTML Preview:</h4>
         <button
           type="button"

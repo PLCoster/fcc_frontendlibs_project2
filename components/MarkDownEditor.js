@@ -8,7 +8,7 @@ const MarkDownEditor = ({
 }) => {
   return (
     <div id="editor-wrapper" className={panelColumnStyle + ' mt-3 mb-3'}>
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between align-items-center">
         <h4>Markdown Editor:</h4>
         <button
           type="button"

@@ -63,12 +63,10 @@ const EditorContainer = () => {
   };
 
   const handleEditorVisibilityChange = () => {
-    console.log('Updating Editor Visibility, initial state: ', editorVisible);
     setEditorVisible(!editorVisible);
   };
 
   const handlePreviewVisibilityChange = () => {
-    console.log('Updating Preview Visibility, initial state: ', previewVisible);
     setPreviewVisible(!previewVisible);
   };
 
