@@ -1,13 +1,4 @@
-const NavBar = ({
-  editorHistory,
-  handlers: {
-    handleEditorUndo,
-    handleEditorRedo,
-    handleEditorSave,
-    handleEditorLoad,
-    handleEditorClear,
-  },
-}) => {
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light">
       <div className="container-fluid">
@@ -30,7 +21,7 @@ const NavBar = ({
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <button
                 type="button"
                 className="btn btn-sm btn-info m-2"
@@ -49,10 +40,10 @@ const NavBar = ({
               >
                 Redo
               </button>
-            </li>
+            </li> */}
           </ul>
           <ul className="navbar-nav">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <button
                 type="button"
                 className="btn btn-sm btn-primary m-2"
@@ -78,7 +69,7 @@ const NavBar = ({
               >
                 Clear
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

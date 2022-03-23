@@ -25,6 +25,19 @@ code {
 }
 
 /*
+=== EDITOR CONTROLS STYLES ===
+*/
+.editor-container {
+  min-width: 450px;
+}
+
+#editor-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/*
 === EDITOR, PREVIEW STYLES ===
 */
 
